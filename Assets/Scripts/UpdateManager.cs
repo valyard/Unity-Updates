@@ -4,15 +4,15 @@ using System.Collections.Generic;
 public class UpdateManager : MonoBehaviour 
 {
 
-	private List<ManagedUpdateBehavior> list;
+	private ManagedUpdateBehavior[] list;
 
 	private void Start () 
 	{
-		list = new List<ManagedUpdateBehavior>(GetComponents<ManagedUpdateBehavior>());
+		list = GetComponents<ManagedUpdateBehavior>();
 	}
 	
 	private void Update () {
-		var count = list.Count;
+		var count = list.Length;
 		for (var i = 0; i < count; i++)
 		{
 			list[i].UpdateMe();
