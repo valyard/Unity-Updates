@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/IndividualUpdates.unity
   - enabled: 1
     path: Assets/UpdateManager.unity
+  - enabled: 1
+    path: Assets/IndividualCoroutines.unity
